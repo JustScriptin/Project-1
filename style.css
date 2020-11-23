@@ -1,3 +1,187 @@
-* {
-  background-color: red;
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+body,
+html {
+  margin: 0;
+  font-family: "Press Start 2P", cursive;
+  background-image: url("assets/hoodratsbg.gif");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #ffc8f2;
+  font-size: 50px;
+}
+
+.appendRatImgClass {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+}
+
+.modal {
+  position: absolute;
+  width: 40%;
+  height: 50%;
+  background-color: #ffc8f2;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  color: #422e51;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 50px 10px 50px 10px;
+  line-height: 26px;
+}
+
+.start-game {
+  background: none;
+  border: none;
+  border-radius: 3px;
+  background-color: #c645a2;
+  padding: 10px 25px;
+  margin-top: 30px;
+  cursor: pointer;
+  font-family: "Press Start 2P", cursive;
+  font-size: 15px;
+  color: white;
+}
+
+.start-game:hover {
+  background-color: #d150ac;
+  font-weight: bolder;
+  border-color: #c4349b;
+  border-style: outset;
+}
+
+.countDownP {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: yellow;
+  -webkit-text-fill-color: #ffb9ee;
+  -webkit-text-stroke-width: 8px;
+  -webkit-text-stroke-color: #d944bc;
+  font-size: 140px;
+}
+
+.endModal1 {
+  background-image: url("assets/gameWinLeftRat.png");
+  position: absolute;
+  width: 40%;
+  height: 50%;
+  background-color: #ffc8f2;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  color: #422e51;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5px;
+  display: none;
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  0% {
+    opacity: 1;
+  }
+  49% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.endModal2 {
+  background-image: url("assets/gameWinRightRat.png");
+  position: absolute;
+  width: 40%;
+  height: 50%;
+  background-color: #ffc8f2;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  color: #422e51;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5px;
+  display: none;
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: blinker 1s infinite;
+}
+
+@keyframes blinker {
+  0% {
+    opacity: 1;
+  }
+  49% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.restart1 {
+  background: none;
+  border: none;
+  border-radius: 3px;
+  background-color: #c645a2;
+  padding: 10px 25px;
+  margin-top: 30px;
+  cursor: pointer;
+  font-family: "Press Start 2P", cursive;
+  font-size: 15px;
+  color: white;
+  margin-top: 45%;
+}
+
+.restart1:hover {
+  background-color: #d150ac;
+  font-weight: bolder;
+  border-color: #c4349b;
+  border-style: outset;
+}
+
+.restart2 {
+  background: none;
+  border: none;
+  border-radius: 3px;
+  background-color: #c645a2;
+  padding: 10px 25px;
+  margin-top: 30px;
+  cursor: pointer;
+  font-family: "Press Start 2P", cursive;
+  font-size: 15px;
+  color: white;
+  margin-top: 45%;
+}
+
+.restart2:hover {
+  background-color: #d150ac;
+  font-weight: bolder;
+  border-color: #c4349b;
+  border-style: outset;
 }
